@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Game Number</title>
+  </head>
+  <body>
+    <header class="flex f-dir-col">
+      <h1 class="title">Game Number</h1>
+      <div class="h-sa-cn flex f-jc-sa f-ai-c">
+        <button class="btn again">Start Again</button>
+        <p>[Choose numbers between 1 and 30...]</p>
+      </div>
+      <span class="number">?</span>
+    </header>
+    <main class="m-b flex f-jc-sb f-ai-c">
+      <section class="flex f-dir-col">
+        <input type="number" class="check-box mg-b-4" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section>
+        <p class="prg-stl message mg-b-4">Start guessing...</p>
+        <p class="prg-stl score mg-b-2">
+          🎯 Score: <span class="newNum">20</span>
+        </p>
+        <p class="prg-stl">✨ Highscore: <span class="highscore">0</span></p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
